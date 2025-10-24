@@ -10,5 +10,6 @@ describe("Valida a exibição e funcionalidade do Modal de Login", () => {
    it("Validar a estrutura do modal de login", () => {
     cy.clicarBotaoLogin();
     cy.clicarBotaoHelp();
+    cy.clicarBotaoCarros();
   });
 });
