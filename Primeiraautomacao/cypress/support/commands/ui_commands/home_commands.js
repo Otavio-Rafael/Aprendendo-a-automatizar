@@ -10,3 +10,6 @@ Cypress.Commands.add("clicarBotaoHelp", () => {
 Cypress.Commands.add("clicarBotaoCarros", () => {
   cy.get(homeElements.btnCarros).should('be.visible').click();
 });
+Cypress.Commands.add("clicarBotaoCarrosSedans", () => {
+  cy.get(homeElements.btnCarrosSedans).should('be.visible').click();
+});
