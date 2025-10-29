@@ -1,8 +1,16 @@
 import { headerElements } from "../../elements/header_elements";
 
 
-Cypress.Commands.add("ClicarBotaoLogin", (Text) => {
-  cy.get(headerElements.btnLogin).should('exist').should('be.visible').should('have.text', Text).click();
+Cypress.Commands.add("clicarBotaoLogoCarAuto", () => {
+  cy.get(headerElements.btnLogoCarAuto).should('be.visible').click();
+});
+
+Cypress.Commands.add("clicarBotaoHome", () => {
+  cy.get(headerElements.btnHome).should('be.visible').click();
+});
+
+Cypress.Commands.add("clicarBotaoSobreNos", () => {
+  cy.get(headerElements.btnSobreNos).should('be.visible').click();
 });
 
 Cypress.Commands.add("clicarBotaoHelp", () => {
@@ -15,6 +23,10 @@ Cypress.Commands.add("clicarBotaoCarros", () => {
 
 Cypress.Commands.add("clicarBotaoCarrosSuvs", () => {
   cy.get(headerElements.btnCarrosSuvs).should('be.visible').click();
+});
+
+Cypress.Commands.add("ClicarBotaoLogin", (Text) => {
+  cy.get(headerElements.btnLogin).should('exist').should('be.visible').should('have.text', Text).click();
 });
 
 Cypress.Commands.add("clicarBotaoCadastro", () => {
@@ -80,3 +92,4 @@ Cypress.Commands.add("clicarBotaoEstadoMG", () => {
 Cypress.Commands.add("clicarBotaoFechaCadastro", () => {
   cy.get(headerElements.btnFecharCadastro).should('be.visible').click();
 });
+

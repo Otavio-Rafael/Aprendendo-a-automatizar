@@ -1,9 +1,12 @@
 export const headerElements = {
-  btnLogin: '[data-qa-id="qa_header_auth_login"]',//botão de login no cabeçalho
-  btnhelp: '[data-qa-id="qa_header_nav_help"]',//botão de ajuda no cabeçalho
-  btnCarros: '[data-qa-id="qa_header_nav_cars"]',//botão carros no cabeçalho
-  btnCarrosSuvs:'[data-qa-id="qa_header_menu_cars_suvs"]',//botão carros sedans no cabeçalho
-  btnCadastro: '[data-qa-id="qa_header_auth_register"]',//botão de cadastro no cabeçalho
+  btnLogoCarAuto: '[data-qa-id="qa_header_logo"]',//botão logo volta para home do header
+  btnHome: '[data-qa-id="qa_header_nav_home"]',//botão home no header
+  btnSobreNos: '[data-qa-id="qa_header_nav_about"]',//botão sobre nós no header
+  btnCarros: '[data-qa-id="qa_header_nav_cars"]',//botão carros no header
+  btnCarrosSuvs:'[data-qa-id="qa_header_menu_cars_suvs"]',//botão carros sedans no header
+  btnhelp: '[data-qa-id="qa_header_nav_help"]',//botão de ajuda no header
+  btnLogin: '[data-qa-id="qa_header_auth_login"]',//botão de login no header
+  btnCadastro: '[data-qa-id="qa_header_auth_register"]',//botão de cadastro no header
   formulariocadastro: '[data-qa-id="qa_register_dialog"',//formulário de cadastro
   tittleMenuCadastro: '[data-qa-id="qa_register_title"]',//título do menu de cadastro
   mnCadastro_Nome:'[data-qa-id="qa_register_name"]',//campo nome no menu de cadastro
