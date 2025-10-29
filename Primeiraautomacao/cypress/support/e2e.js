@@ -14,7 +14,7 @@
 // ***********************************************************
 
 // Import commands.js using ES2015 syntax:
-import "./commands/ui_commands/home_commands";
+import "./commands/ui_commands/header_commands";
 Cypress.on('uncaught:exception', () => {
     return false
   })
