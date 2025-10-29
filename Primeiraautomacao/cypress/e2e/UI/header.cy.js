@@ -18,37 +18,26 @@ describe("Valida a exibição e funcionalidade do Modal de Login", () => {
     cy.clicarBotaoSobreNos();
   });
 
+    it("Validar botão carros e modal carros", () => {
+    cy.clicarBotaoCarros();
+    cy.validarModalCarros();
+    cy.clicarBotaoCarrosSuvs();
+    cy.clicarBotaoCarros();
+    cy.validarModalCarros();
+    cy.clicarBotaoCarrosSedans();
+  });
+
   it("Validar botão de help", () => {
     cy.clicarBotaoHelp();
   });
 
-  it("Validar navegação pelo menu carros", () => {
-    cy.clicarBotaoCarros();
-    cy.clicarBotaoCarrosSuvs();
-  });
-
-    it("Validar botão de login", () => {
+  it("Validar botão de login e modal login", () => {
     cy.ClicarBotaoLogin(headerData.text_login);
+    cy.validarFormularioLogin();
   });
 
-  it("Validar formulário de cadastro", () => {
+  it("Validar botão de cadastro", () => {
     cy.clicarBotaoCadastro();
     cy.vizualizarFomularioCadastro();
-    cy.vizualizarTituloFormularioCadastro();
-    cy.clicarRegistrarNome();
-    cy.clicarRegistrarSurNome();
-    cy.clicarRegistrarEmail();
-    cy.clicarRegistrarSenha();
-    cy.clicarConfirmarSenha();
-    cy.clicarBotaoMasculino();
-    cy.clicarBotaoFeminino();
-    cy.clicarBotaoGenderOutro();
-    cy.clicarBotaoEstado();
-    cy.clicarBotaoEstadoSP();
-    cy.clicarBotaoEstado();
-    cy.clicarBotaoEstadoRJ();
-    cy.clicarBotaoEstado();
-    cy.clicarBotaoEstadoMG();
-    cy.clicarBotaoFechaCadastro();
   });
 });

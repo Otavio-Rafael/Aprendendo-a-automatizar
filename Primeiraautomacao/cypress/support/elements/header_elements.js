@@ -1,25 +1,20 @@
 export const headerElements = {
   btnLogoCarAuto: '[data-qa-id="qa_header_logo"]',//botão logo volta para home do header
+
   btnHome: '[data-qa-id="qa_header_nav_home"]',//botão home no header
+
   btnSobreNos: '[data-qa-id="qa_header_nav_about"]',//botão sobre nós no header
+
   btnCarros: '[data-qa-id="qa_header_nav_cars"]',//botão carros no header
+  modalCarros: '[data-qa-id="qa_header_menu_cars"]',//modal carros no header
   btnCarrosSuvs:'[data-qa-id="qa_header_menu_cars_suvs"]',//botão carros sedans no header
-  btnhelp: '[data-qa-id="qa_header_nav_help"]',//botão de ajuda no header
+  btnCarrosSedans:'[data-qa-id="qa_header_menu_cars_sedans"]',//botão carros suvs no header
+
+  btnHelp: '[data-qa-id="qa_header_nav_help"]',//botão de ajuda no header
+
   btnLogin: '[data-qa-id="qa_header_auth_login"]',//botão de login no header
+  formularioLogin: '[data-qa-id="login-modal"]',//formulário de login
+
   btnCadastro: '[data-qa-id="qa_header_auth_register"]',//botão de cadastro no header
-  formulariocadastro: '[data-qa-id="qa_register_dialog"',//formulário de cadastro
-  tittleMenuCadastro: '[data-qa-id="qa_register_title"]',//título do menu de cadastro
-  mnCadastro_Nome:'[data-qa-id="qa_register_name"]',//campo nome no menu de cadastro
-  mnCadastro_SurNome:'[data-qa-id="qa_register_surname"]',//campo sobrenome no menu de cadastro
-  mnCadastro_Email:'[data-qa-id="qa_register_email"]',//campo email no menu de cadastro
-  mnCadastro_Senha:'[data-qa-id="qa_register_password"]',//campo senha no menu de cadastro
-  mnCadastro_ConfirmarSenha:'[data-qa-id="qa_register_confirm_password"]',//campo confirmar senha no menu de cadastro
-  btnGender_Masculino: '[data-qa-id="qa_register_gender_male"]',//botão gênero masculino no menu de cadastro
-  btnGender_Feminino: '[data-qa-id="qa_register_gender_female"]',//botão gênero feminino no menu de cadastro
-  btnGernder_Outro: '[data-qa-id="qa_register_gender_other"]',//botão gênero outro no menu de cadastro
-  btnEstado: '[data-qa-id="qa_register_state"]',//botão estado no menu de cadastro
-  btnEstado_Sp: '[data-qa-id="qa_register_state_sp"]',//botão estado são paulo no menu de cadastro
-  btnEstado_Rj: '[data-qa-id="qa_register_state_rj"]',//botão estado rio de janeiro no menu de cadastro
-  btnEstado_Mg: '[data-qa-id="qa_register_state_mg"]',//botão estado minas gerais no menu de cadastro
-  btnFecharCadastro: '[data-qa-id="qa_register_close_button"]'//botão fechar no menu de cadastro
+  formularioCadastro: '[data-qa-id="qa_register_dialog"]',//formulário de cadastro
 };
