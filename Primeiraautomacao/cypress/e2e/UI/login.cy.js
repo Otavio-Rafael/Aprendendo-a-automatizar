@@ -23,6 +23,5 @@ it("Validar fluxo de login usar código", () => {
     cy.clicarBotaoEnviarCodigoLogin();
     cy.validarMensagemErroEmail();
     cy.clicarBotaoUsarSenha();
-  }
-
+  })
 });

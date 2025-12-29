@@ -1,4 +1,5 @@
 export const headerElements = {
+
   btnLogoCarAuto: '[data-qa-id="qa_header_logo"]',//botão logo volta para home do header
 
   btnHome: '[data-qa-id="qa_header_nav_home"]',//botão home no header
@@ -6,7 +7,7 @@ export const headerElements = {
   btnSobreNos: '[data-qa-id="qa_header_nav_about"]',//botão sobre nós no header
 
   btnCarros: '[data-qa-id="qa_header_nav_cars"]',//botão carros no header
-  modalCarros: '[data-qa-id="qa_header_menu_cars"]',//modal carros no header
+  modalCarros: 'ul[role="menu"]',//modal carros no header
   btnCarrosSuvs:'[data-qa-id="qa_header_menu_cars_suvs"]',//botão carros sedans no header
   btnCarrosSedans:'[data-qa-id="qa_header_menu_cars_sedans"]',//botão carros suvs no header
 

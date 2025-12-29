@@ -95,7 +95,7 @@ Cypress.Commands.add("clicarBotaoFechaCadastro", () => {
 
 
   btnCadastro: '[data-qa-id="qa_header_auth_register"]',//botão de cadastro no header
-  formulariocadastro: '[data-qa-id="qa_register_dialog"',//formulário de cadastro
+  formulariocadastro: '[data-qa-id="qa_register_dialog"]',//formulário de cadastro
   tittleMenuCadastro: '[data-qa-id="qa_register_title"]',//título do menu de cadastro
   mnCadastro_Nome:'[data-qa-id="qa_register_name"]',//campo nome no menu de cadastro
   mnCadastro_SurNome:'[data-qa-id="qa_register_surname"]',//campo sobrenome no menu de cadastro

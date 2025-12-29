@@ -1,3 +1,11 @@
 {
-  "text_login": "Login"
+  "text_login": "Login",
+  "text_home": "Home",
+  "text_sobre_nos": "Sobre Nós",
+  "text_carros": "Carros",
+  "text_carrossedans": "Sedans",
+  "text_carrossuvs": "SUVs",
+  "text_ajuda": "Ajuda",
+  "text_cadastro": "Cadastro",
+  "text_altLogo": "Logo QAuto"
 }
