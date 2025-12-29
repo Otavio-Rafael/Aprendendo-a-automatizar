@@ -6,29 +6,35 @@ describe("Valida a exibição e funcionalidade do Modal de Login", () => {
     cy.visit("/");
   });
 
-    it("Validar botão logo CarAuto", () => {
-    cy.clicarBotaoLogoCarAuto();
+    it("Validar botão/Imagem logo CarAuto", () => {
+    cy.validarImagemLogoCarAuto(headerData.text_altLogo);
+    cy.clicarBotaoLogoCarAuto("/");
   });
 
     it("Validar botão home", () => {
-    cy.clicarBotaoHome();
+    cy.clicarBotaoHome(headerData.text_home, "/");
   });
 
     it("Validar botão SobreNos", () => {
-    cy.clicarBotaoSobreNos();
+    cy.clicarBotaoSobreNos(headerData.text_sobre_nos, "/sobre");
   });
 
-    it("Validar botão carros e modal carros", () => {
-    cy.clicarBotaoCarros();
-    cy.validarModalCarros();
-    cy.clicarBotaoCarrosSuvs();
-    cy.clicarBotaoCarros();
-    cy.validarModalCarros();
-    cy.clicarBotaoCarrosSedans();
+   it.only("Validar redirect de SUVs e Sedans", () => {
+    // ✅ SUVs
+    cy.clicarBotaoCarros(headerData.text_carros);
+    cy.validarModalCarros("Sedans", "SUVs");
+    cy.clicarBotaoCarrosSuvsEValidarRedirect(headerData.text_carrossuvs, "/carros/suvs"); // ajuste a url
+
+    cy.visit("/"); // volta pra home pra não depender do estado
+
+     // ✅ Sedans
+    cy.clicarBotaoCarros(headerData.text_carros);
+    cy.validarModalCarros("Sedans", "SUVs");
+    cy.clicarBotaoCarrosSedansEValidarRedirect(headerData.text_carrossedans, "/carros/sedan"); // ajuste a url
   });
 
-  it("Validar botão de help", () => {
-    cy.clicarBotaoHelp();
+  it("Validar botão de ajuda", () => {
+    cy.clicarBotaoAjuda(headerData.text_ajuda, "/ajuda");
   });
 
   it("Validar botão de login e modal login", () => {
@@ -37,7 +43,7 @@ describe("Valida a exibição e funcionalidade do Modal de Login", () => {
   });
 
   it("Validar botão de cadastro", () => {
-    cy.clicarBotaoCadastro();
+    cy.clicarBotaoCadastro(headerData.text_cadastro);
     cy.vizualizarFomularioCadastro();
   });
 });
